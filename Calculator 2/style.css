@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 1px solid #000;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    background: #673ab752;
+    color: #fff;
+    outline: none;
+}
+
+.textview {
+    width: 225px;
+    padding: 10px;
+    margin: 2px;
+    font-size: 25px;
+    border: 1px solid #673ab752;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bg {
+    background-color: #000;
+    height: 100%;
+}
+
+input[type=button]:hover {
+    background-color: #26b821;
+    color: #000;
+}

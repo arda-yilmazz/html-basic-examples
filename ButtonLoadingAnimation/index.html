@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      button {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 0;
+        border: none;
+        cursor: pointer;
+        background-color: orangered;
+        color: #fff;
+        transition: 300ms all;
+        position: relative;
+        overflow: hidden;
+      }
+
+      button[disabled]::before {
+        content: "";
+        height: 4px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        animation: 1s loading infinite linear;
+      }
+
+      button[disabled] {
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      @keyframes loading {
+        from {
+          left: -20%;
+          right: 50%;
+        }
+        to {
+          left: 100%;
+          right: -100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="button">click me</button>
+
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam
+      culpa repudiandae minima quaerat voluptas delectus labore vitae error
+      distinctio.
+    </p>
+    <p style="display: none" id="paragraph2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
+      reiciendis?
+    </p>
+
+    <script>
+      let button = document.getElementById("button");
+      button.addEventListener("click", () => {
+        setTimeout(() => button.setAttribute("disabled", ""), 1);
+        setTimeout(
+          () => (document.getElementById("paragraph").style.display = "none"),
+          1
+        );
+        setTimeout(() => button.removeAttribute("disabled", ""), 2000);
+        setTimeout(
+          () => (document.getElementById("paragraph2").style.display = "block"),
+          2000
+        );
+        console.log("tıklandı");
+      });
+    </script>
+  </body>
+</html>

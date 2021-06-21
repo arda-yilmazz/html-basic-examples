@@ -1,0 +1,43 @@
+* {
+    background: #fff;
+}
+
+*:focus {
+    outline: none;
+}
+
+label.checkbox input {
+    position: absolute;
+    opacity: 0;
+}
+
+label.checkbox .checkbox {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: rgba(0,0,0,.26);
+    border-radius: 20px;
+    transition: 200ms background;
+}
+
+label.checkbox .checkbox span {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+    transition: 200ms left;
+}
+
+label.checkbox input:checked + .checkbox  {
+    background: #1e90ff;
+}
+
+label.checkbox input:checked + .checkbox span {
+    left: 55px;
+    right: 0;
+}

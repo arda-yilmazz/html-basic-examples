@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap);
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: Mulish, sans-serif;
+}
+
+.share {
+    padding: 5px;
+    margin: 10px;
+    background-color: #ebebf2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 75px;
+    background-color: #f7f7fc;
+    width: 800px;
+    border-radius: 10px;
+    top: -50%;
+}
+
+.popup h2 {
+    position: absolute;
+    top: 20px;
+}
+
+.popup .close {
+    flex: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid rgba(0,0,0,.1);
+    font-size: 30px;
+    border-radius: 50%;
+    transition: 250ms all;
+}
+
+.popup ul li a:hover {
+    border-color: #f775c1;
+}
+
+.popup ul li a img {
+    width: 50px;
+}
+
+.popup h5 {
+    padding-top: 50px;
+    margin-bottom: 15px
+}
+
+.popup .input {
+    position: relative;
+}
+
+.popup .input button {  
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 57px;
+    padding: 0 20px;
+    line-height: 57px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #F775C1;
+    background: transparent;
+    cursor: pointer;
+}
+
+.popup .input input{
+    height: 57px;
+    border: 1px solid #EBEBF2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #242E4C;
+}

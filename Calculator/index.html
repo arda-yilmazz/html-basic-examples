@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+<script src="https://kit.fontawesome.com/56942480bb.js" crossorigin="anonymous"></script>
+
+<div class="main-wrapper">
+    <div id="op-history-container" class="hide"></div>
+
+    <div class="inputs-wrapper">
+        <i class="fas fa-history" id="toggle-history"></i>
+        <input type="text" id="input-top">
+        <input type="text" id="input-bottom" placeholder="0">
+    </div>
+
+    <div class="gradient-divider"></div>
+
+    <div class="row">
+        <div data-set="7" class="num">7</div>
+        <div data-set="8" class="num">8</div>
+        <div data-set="9" class="num">9</div>
+        <div data-set="/" class="op">÷</div>
+    </div>
+
+    <div class="row">
+        <div data-set="4" class="num">4</div>
+        <div data-set="5" class="num">5</div>
+        <div data-set="6" class="num">6</div>
+        <div data-set="*" class="op">x</div>
+    </div>
+
+    <div class="row">
+        <div data-set="1" class="num">1</div>
+        <div data-set="2" class="num">2</div>
+        <div data-set="3" class="num">3</div>
+        <div data-set="-" class="op">-</div>
+    </div>
+
+    <div class="row">
+        <div class="num" id="reset">C</div>
+        <div data-set="0" class="num">0</div>
+        <div data-set="." class="num">.</div>
+        <div data-set="+" class="op">+</div>
+    </div>
+
+    <div id="equal" data-set="=">
+        =
+    </div>
+</div>
+
+<p class="disclaimer" style="opacity: .8; letter-spacing: 1px; font-size: 14px;">I'm the developer. Meet the designer on <a href="https://dribbble.com/awsmd" target="_blank"><span style="font-family: 'Pacifico'"><i class="fab fa-dribbble" style="font-weight: bold"></i> dribbble</span></a>.</p>
+<script src="script.js"></script>
+</body>
+</html>

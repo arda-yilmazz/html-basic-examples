@@ -1,0 +1,33 @@
+body {
+    background: #000;
+    font-family: system-ui;
+}
+
+body:focus {
+    outline: none;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.wrapper a {
+    padding: 20px 80px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border: 1px solid #ed4956;
+    transition: 500ms all;
+}
+
+a:hover {
+    background: #ed4956;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 5px #fff, 0 0 50px #fff, 0 0 75px #fff, 0 0 100px #fff;
+}

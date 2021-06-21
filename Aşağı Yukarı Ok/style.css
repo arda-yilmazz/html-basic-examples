@@ -1,0 +1,31 @@
+.btn input {
+    position: absolute;
+    opacity: 0;
+}
+
+.btn input:checked + span {
+    display: none;
+}
+
+.btn input:checked + span + span {
+    display: inline-block;
+}
+
+.btn span:nth-of-type(2) {
+    display: none;
+}
+
+span
+
+.btn span {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 20px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: #efefef;
+}

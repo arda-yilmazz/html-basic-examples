@@ -1,0 +1,131 @@
+/*Dark Mode*/
+body{
+    font-family: system-ui;
+    background: #eee;
+    color: #222;
+    transition: 250ms all;
+}   
+
+body.dark{
+    font-family: system-ui;
+    background: #222;
+    color: #eee;
+}
+
+.mode-control {
+    position: absolute;
+    background: #222;
+    color: #eee;
+    padding: 0 20px;
+    right: 0;
+    line-height: 50px;
+}
+
+body.dark .mode-control {
+    background: #eee;
+    color: #222;
+}
+
+.mode-control input{
+    position: absolute;
+    opacity: 0;
+}
+.mode-control input:checked +span{
+    display: none
+}
+
+.mode-control span:nth-of-type(2){
+    display: none;
+}
+
+.mode-control input:checked +span +span{
+    display: inline-block;
+}
+
+/* Menu*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body ul.menu {
+    background: #27ae60;
+    height: 50px;   
+}
+
+body.dark ul.menu {
+    background: #2c3e50;
+    height: 50px;
+}
+
+body ul.menu >li {
+    float: left;
+    position: relative;
+}
+
+
+body.dark ul.menu >li {
+    float: left;
+    position: relative;
+}
+
+body ul.menu >li >a {
+    display: block;
+    color: #fff;
+    padding: 0 15px;
+    line-height: 50px;
+    border-right: 1px solid rgba(0,0,0,.1)
+}
+
+body ul.menu ul {
+    background: #27ae60;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 250ms all;
+}
+body.dark ul.menu ul {
+    background: #2c3e50;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 250ms all;
+}
+
+body ul.menu ul li a{
+    display: block;
+    padding: 7px 12px;
+    color: #fff;
+}
+
+body.dark ul.menu >li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+
+body ul.menu >li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
+}
+body ul.menu >li >a:hover {
+    background: #f39c12;
+}
+
+body ul.menu ul li a:hover{
+    background: #f39c12;
+}

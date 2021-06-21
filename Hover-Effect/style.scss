@@ -1,0 +1,73 @@
+p {
+  color: #666;
+}
+
+.btn {
+  height: 30px;
+  overflow: hidden;
+  display: inline-block;
+  a {
+    background: #4527A0;
+    color: #fff;
+    font: bold 14px/30px Arial;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    transition: 250ms top, 350ms left;
+    &:before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 100%;
+      background: #212121;
+      height: 30px;
+    }
+    &:hover {
+      top: -30px;
+    }
+  }
+  &.hover-top {
+    a {
+      background: #0D47A1;
+      &:hover {
+        top: 30px;
+      }
+      &:before {
+        top: -30px;
+      }
+    }
+  }
+  &.hover-right {
+    a {
+      background: #2E7D32;
+      left: 0;
+      &:hover {
+        top: 0;
+        left: -100px;
+      }
+      &:before {
+        top: 0;
+        left: 100px;
+      }
+    }
+  }
+  &.hover-left {
+    a {
+      background: #AD1457;
+      left: 0;
+      &:hover {
+        top: 0;
+        left: 100px;
+      }
+      &:before {
+        top: 0;
+        left: -100px;
+      }
+    }
+  }
+}

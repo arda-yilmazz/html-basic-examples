@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font: 16px system-ui;
+}
+
+ul.menu {
+    background-color: #03e9f4;
+    height: 50px;
+    display: flex;
+}
+
+ul.menu li a {
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 50px;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+ul.menu li a:hover {
+    background-color: red;
+}

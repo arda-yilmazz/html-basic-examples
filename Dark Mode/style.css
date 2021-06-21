@@ -1,0 +1,26 @@
+body {
+    background-color: #eee;
+    color: #222;
+}
+
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+.mode-control input {
+    position: absolute;
+    opacity: 0;
+}
+
+.mode-control span:nth-of-type(2) {
+    display: none;
+}
+
+.mode-control input:checked + span {
+    display: none;
+}
+
+.mode-control input:checked + span + span {
+    display: inline-block;
+}

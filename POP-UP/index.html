@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+</head>
+<body>
+
+<button class="share" id="open-btn">
+    <i class="fa fa-share"></i>
+    SHARE
+</button>
+
+<div class="popup" id="popup">
+
+    <h2>
+        Share this design
+    </h2>
+
+    <button class="close" id="close-btn">
+        <i class="fa fa-times"></i>
+    </button>
+
+    <ul>
+        <li>
+            <a href="#">
+                <img src="İmages/twitter_logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="İmages/instagram_logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="İmages/facebook_logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="İmages/instagram_logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="İmages/twitter_logo.png" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="İmages/facebook_logo.png" alt="">
+            </a>
+        </li>
+    </ul>
+
+    <h5>
+        or copy link
+    </h5>
+
+    <div class="input">
+        <input type="text" readonly id="input-url" value="https://www.uidesigndaily.com/posts/5d6ab9ea91deae0012006d44">
+        <button type="button" onclick="copy('input-url')">Copy</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
